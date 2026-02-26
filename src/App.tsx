@@ -9,6 +9,7 @@ import QuickLinks from './components/QuickLinks';
 import MonthlyReminders from './components/MonthlyReminders';
 import CommandPalette from './components/CommandPalette';
 import Favorites from './components/Favorites';
+import PasswordGate from './components/PasswordGate';
 import { useFavorites } from './hooks/useFavorites';
 
 export default function App() {
@@ -37,7 +38,7 @@ export default function App() {
   }, []);
 
   return (
-    <>
+    <PasswordGate>
       <Navbar
         activeSection={activeSection}
         onNavigate={handleNavigate}
@@ -62,6 +63,6 @@ export default function App() {
         <strong>Talent Hub</strong> — Geotab Talent Acquisition Resource Center<br />
         Internal use only. All information is confidential to Geotab.
       </footer>
-    </>
+    </PasswordGate>
   );
 }
