@@ -1,0 +1,105 @@
+.quick-links {
+  background: var(--color-white, #fff);
+  padding: 80px 24px;
+}
+
+.quick-links-inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.ql-search {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid var(--color-gray-200, #E2E8F0);
+  border-radius: var(--radius-sm, 8px);
+  font-size: 0.88rem;
+  margin-bottom: 16px;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.ql-search:focus {
+  border-color: var(--color-primary, #21325E);
+}
+
+.ql-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 24px;
+}
+
+.ql-cat {
+  padding: 5px 12px;
+  border: 1px solid var(--color-gray-200, #E2E8F0);
+  border-radius: 20px;
+  background: none;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--color-gray-500, #64748B);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.ql-cat:hover {
+  border-color: var(--color-primary, #21325E);
+  color: var(--color-primary, #21325E);
+}
+
+.ql-cat.active {
+  background: var(--color-primary, #21325E);
+  border-color: var(--color-primary, #21325E);
+  color: #fff;
+}
+
+.ql-group {
+  margin-bottom: 24px;
+}
+
+.ql-group-title {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--color-gray-500, #64748B);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0 0 8px;
+}
+
+.ql-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 6px;
+}
+
+.ql-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 14px;
+  background: var(--color-gray-50, #F8FAFC);
+  border: 1px solid var(--color-gray-200, #E2E8F0);
+  border-radius: 6px;
+  color: var(--color-navy, #21325E);
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.ql-link:hover {
+  border-color: var(--color-primary, #21325E);
+  box-shadow: 0 1px 4px rgba(33, 50, 94, 0.1);
+}
+
+.ql-link-arrow {
+  color: var(--color-primary, #21325E);
+  font-size: 0.82rem;
+  flex-shrink: 0;
+  margin-left: 8px;
+}
+
+@media (max-width: 640px) {
+  .ql-grid {
+    grid-template-columns: 1fr;
+  }
+}

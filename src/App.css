@@ -1,0 +1,12 @@
+.app-footer {
+  background: var(--color-navy);
+  color: var(--color-gray-400);
+  text-align: center;
+  padding: 32px 24px;
+  font-size: 0.82rem;
+  line-height: 1.6;
+}
+
+.app-footer strong {
+  color: white;
+}
