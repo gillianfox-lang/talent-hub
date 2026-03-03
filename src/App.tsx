@@ -8,6 +8,7 @@ import OnboardingSchedule from './components/OnboardingSchedule';
 import QuickLinks from './components/QuickLinks';
 import MonthlyReminders from './components/MonthlyReminders';
 import CommandPalette from './components/CommandPalette';
+import Chatbot from './components/Chatbot';
 import Favorites from './components/Favorites';
 import PasswordGate from './components/PasswordGate';
 import { useFavorites } from './hooks/useFavorites';
@@ -59,6 +60,7 @@ export default function App() {
         onToggleFavorite={toggleFavorite}
         isFavorite={isFavorite}
       />
+      <Chatbot />
       <footer className="app-footer">
         <strong>Talent Hub</strong> — Geotab Talent Acquisition Resource Center<br />
         Internal use only. All information is confidential to Geotab.
