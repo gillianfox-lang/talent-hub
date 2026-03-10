@@ -10,6 +10,7 @@ import MonthlyReminders from './components/MonthlyReminders';
 import CommandPalette from './components/CommandPalette';
 import Chatbot from './components/Chatbot';
 import Favorites from './components/Favorites';
+import Campus from './components/Campus';
 import PasswordGate from './components/PasswordGate';
 import { useFavorites } from './hooks/useFavorites';
 
@@ -52,6 +53,7 @@ export default function App() {
       <QuickLinks isFavorite={isFavorite} onToggleFavorite={toggleFavorite} />
       <GemResources />
       <OnboardingSchedule />
+      <Campus />
       <CommandPalette
         open={cmdOpen}
         onClose={() => setCmdOpen(false)}

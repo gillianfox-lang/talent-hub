@@ -14,6 +14,7 @@ const links = [
   { id: 'monthly-reminders', label: 'Reminders' },
   { id: 'gem-resources', label: 'GEMs' },
   { id: 'onboarding-schedule', label: 'Onboarding' },
+  { id: 'campus', label: 'Campus' },
 ];
 
 export default function Navbar({ activeSection, onNavigate, onOpenCommandPalette }: NavbarProps) {
